@@ -16,13 +16,16 @@
 <body>
   <header>
     <nav>
+      <button class="hamburger" aria-label="Menú" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul>
         <li>Inicio</li>
         <li>Filosofía</li>
         <li>Próximos Eventos</li>
         <li>Contacto</li>
-        <li>Prueba</li>
-        hola
       </ul>
     </nav>
   </header>
@@ -48,6 +51,9 @@
       </div>
     </section>
     <section>
+      <div class="slideshow">
+        <img src="./assets/img/slide1_a.jpeg" alt="Hola">
+      </div>
       <article>
         <p>
           JIU JITSU KRAV MAGA MÉXICO <br>
@@ -56,9 +62,6 @@
         </p>
 
       </article>
-      <div class="slideshow">
-
-      </div>
     </section>
     <section>
       <article>
@@ -104,6 +107,12 @@
   <footer>
     <!-- Legal stuff -->
   </footer>
+  <script>
+    function toggleMenu() {
+      const navList = document.querySelector('nav > ul');
+      navList.classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>
