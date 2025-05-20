@@ -94,16 +94,15 @@ nav li:hover {
     border-radius: 2rem;
     box-shadow: 0 4px 32px 0 rgba(0,0,0,0.25);
     padding: 1.5rem 0;
+    text-align: center;
 }
 .titulo > img {
     border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
+    height: 6rem;
+    width: 6rem;
     object-fit: cover;
-    background: #fff;
-    padding: 0.3rem;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.15);
-    border: 3px solid #e63946;
+    border: 1px solid #e63946;
 }
 .titulo > h1 {
     font-family: 'Archivo Black', Arial, sans-serif;
@@ -183,11 +182,14 @@ ul {
 aside {
     background: rgba(230,57,70,0.12);
     border-left: 4px solid #e63946;
-    border-radius: 0.7rem;
-    padding: 1.2rem 1.2rem 1.2rem 1.5rem;
+    border-radius: 0.7rem;    
     color: #fff;
     font-size: 1.05rem;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+}
+
+.section > :last-child {
+    align-items: center;
 }
 
 /* Table styling */
@@ -246,7 +248,7 @@ footer {
         width: 3.2rem;
     }
     main {
-        padding: 0 0.2rem 2rem 0.2rem;
+        padding: 0 1rem 2rem 1rem;
     }
     section {
         padding: 1.5rem 0.5rem;
